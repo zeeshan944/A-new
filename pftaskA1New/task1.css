@@ -1,0 +1,338 @@
+.body{
+
+    
+}
+.navbar-nav .navbar-brand{
+
+
+    color:#75BF7A;
+ 
+}
+.navbar .navbar-expand-lg {
+
+   margin: 60px !important;
+   background-color: ghostwhite !important;
+}
+.collapse navbar-collapse{
+
+
+    text-align: right;
+}
+.navbar-nav .nav-link {
+    color: #000000 !important; 
+  }
+  .navbar-brand {
+    color: #75BF7A !important; 
+  }
+  
+  /* Style for "Help Center" button */
+  .navbar-nav .nav-item button {
+    background-color: #75BF7A; /* Set button background color to black */
+    color: white; /* Set button text color to white */
+    border: none; 
+    padding: 5px 15px; 
+    cursor: pointer; 
+    
+  }
+
+  .navbar-nav .nav-item  {
+    margin: 0 10px; /* Add spacing between navigation items */
+    color: black !important; 
+  }
+
+  .navbar {
+    padding-top: 60px ; /* Add 10px padding on top and bottom, 60px on left and right */
+    padding-bottom: 60px;
+  }
+  
+  /* Add padding to section1 */
+  .section1 {
+    padding-top: 30px; /* Add 60px padding on all sides */
+  }
+  
+  /* Add margin to the left and right sides of the navbar and section1 */
+  .navbar,
+  .section1 {
+    margin: 0 60px; /* Add 60px margin on left and right */
+    margin-bottom: 60px;
+  }
+  
+
+  .dlnbutton1,
+.dlnbutton2 {
+    width: 100%;
+  background-color: #000000; /* Set background color of the buttons */
+  color: #ffffff; /* Set text color of the buttons */
+  padding: 10px 20px; /* Add padding to the buttons */
+  margin-top: 20px; /* Add top margin to separate buttons */
+  display: block; /* Display buttons as blocks to take full width of their parent columns */
+  border: none; /* Remove button border */
+  position: relative; /* Set the position to relative for proper alignment */
+
+}
+
+.dlnbutton1::before,
+.dlnbutton2::before {
+  font-family: "Font Awesome 5 Brands"; /* Use the Font Awesome Brands font family */
+  content: "\f3ab"; /* Unicode code for the fa-google-play icon */
+  position: absolute; /* Position the icon absolutely */
+  left: 10px; /* Adjust the left position for proper spacing */
+  top: 50%; /* Vertically center the icon */
+  transform: translateY(-50%); /* Adjust vertical alignment */
+  font-size: 20px; /* Adjust the icon size */
+  color: white; /* Set the color of the icon to white */
+}
+  
+  
+.section2 {
+    padding-top: 60px; /* Add 60px padding on all sides */
+    padding-bottom: 60px; /* Add 60px padding on all sides */
+
+    background-color: #75BF7A; /* Set button background color to black */
+}
+  
+  .navbar,
+  .section2 {
+    margin-bottom: 60px;
+    margin: 0 60px; /* Add 60px margin on left and right */
+  }
+
+  .section3 {
+    padding-top: 60px; /* Add 60px padding on all sides */
+    padding-bottom: 60px; /* Add 60px padding on all sides */
+
+   
+}
+  
+  .navbar,
+  .section3 {
+    margin-bottom: 60px;
+    margin: 0 60px; /* Add 60px margin on left and right */
+  }
+
+  .section4{
+    padding-top: 130px; /* Add 60px padding on all sides */
+    padding-bottom: 160px; /* Add 60px padding on all sides */
+
+   
+}
+  
+  .navbar,
+  .section4 {
+    padding-top: 130px; 
+    margin-bottom: 60px;
+    margin: 0 80px; /* Add 60px margin on left and right */
+    margin-left: -150px;
+    margin-right: -75px;
+  }
+ 
+  .navbar,
+  .footer{
+    margin-bottom: 60px;
+    margin: 0 60px; /* Add 60px margin on left and right */
+  }
+  .footer{
+    margin-bottom: 60px;
+  }
+  .navbar-toggler-icon {
+    color: black; /* Change to the desired color */
+}
+/* Section 1 */
+@media (max-width: 767px) {
+  .section1 .row {
+      flex-direction: column-reverse; /* Reverse order on mobile */
+  }
+
+  .section1 .col-sm-3 {
+      padding-right: 0; /* Reset padding on mobile */
+  }
+
+  .section1 h1,
+  .section1 p,
+  .section1 .row {
+      text-align: center; /* Center align text and buttons on mobile */
+ 
+    }
+  .section1 .col-sm-9 img {
+    display: block;
+   text-align: center;
+   padding-right: 100px;
+  }
+  .section1 .col-sm-9,
+  .section1 .col-sm-3 {
+      padding-top: 20px; /* Remove padding on mobile */
+  }
+
+  .section1 .col-sm-6 {
+      padding: 0px; /* Adjust padding for the buttons on mobile */
+  }
+  
+}
+
+/* Section 2 */
+  @media (max-width: 767px) {
+    .form-inline .form-group {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+    
+    /* Apply To Drive button - On bottom for mobile layout */
+    .btn-primary {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+}
+
+/* Section 3 */
+@media (max-width: 767px) {
+  
+  /* Reorder sections for mobile layout */
+  .col-md-4:nth-child(1) {
+      order: 2;
+      
+  }
+
+  .col-md-4:nth-child(2) {
+      order: 1;
+  }
+
+  .col-md-4:nth-child(3) {
+      order: 4;
+  }
+
+  .col-md-4:nth-child(4) {
+      order: 3;
+  }
+  .col-md-4 .image-box {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+  /* Adjust padding and margins for better alignment */
+  .col-md-4 .image-box-1 {
+      margin-top: 100px;
+      padding-top: 0px;
+  }
+  .col-md-4 .image-box2 {
+    margin-top: -100px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+} 
+.col-md-4 .image-box3 {
+  margin-top: 70px;
+  padding-top: 120px;
+
+}
+.col-md-4 .image-box4{
+  margin-top: 0;
+  padding-top: 200px;
+  padding-bottom: 0px;
+}
+
+
+  .col-md-4 .image-box {
+      margin-top: 0;
+      padding-top: 30px;
+  }
+  .col-md-4 .image-box,
+        .col-md-4 .image-box-1,
+        .col-md-4 .image-box2,
+        .col-md-4 .image-box3,
+        .col-md-4 .image-box4 {
+            text-align: center;
+        }
+
+ .col-md-4 h4,
+.col-md-4 p {
+            text-align: center;
+        }
+}
+
+
+
+/* Section 4 */
+@media (max-width: 767px) {
+  /* Reset text alignment */
+  .col-md-6 h3,
+  .col-md-6 .image-box,
+  .col-md-6 p {
+      text-align: center;
+      padding-right: 100px;
+      padding-left: 100px;
+      
+
+  }
+  .col-md-6.text-right {
+    text-align: center;
+}
+  /* Adjust the order of the image and paragraph */
+  .col-md-6.text-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .col-md-6.text-center .image-box {
+      order: 2;
+      margin-top: 10px;
+  }
+
+  .col-md-6.text-center p {
+      order: 3;
+      margin-top: 20px;
+  }
+  .row {
+    position: relative;
+}
+
+
+}
+
+  @media (max-width: 768px) {
+    /* Section 1 */
+    .section1 {
+      padding: 30px;
+    }
+  
+    /* Section 2 */
+    .section2 {
+      padding: 20px;
+    }
+  
+    /* Section 3 */
+    .section3 .image-box {
+      padding-top: 60px;
+      margin-top: 0;
+    }
+  
+    .section3 .image-box-number {
+      position: static;
+      margin-left: 0;
+      padding-top: 0;
+      font-weight: normal;
+      color: initial;
+    }
+  
+    .section3 .image-box-1 {
+      padding-top: 0;
+    }
+  
+    /* Section 4 */
+    .section4 {
+      padding: 20px;
+    }
+  
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .footer .col-md-2 {
+      margin-bottom: 20px;
+    }
+  
+    .footer img {
+      max-width: 100%;
+    }
+  }
+  
